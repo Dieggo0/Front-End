@@ -14,7 +14,7 @@
   <header>
 
     <!-- Encabezado -->
-    
+
       <nav class="navbar">
 
         <div class="container-fluid">
@@ -23,7 +23,7 @@
           </a>
 
           <div class="d-flex flex-row mb-3">
-            <a class="p-2" href="https://www.instagram.com/diegoleonardi_06/">
+            <a class="p-2" id="Instagram" href="https://www.instagram.com/diegoleonardi_06/">
               <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png" alt="Instagram" width="30" height="30">
             </a>
             <button type="button" class="btn btn-outline-dark p-2.5" id="Login"> Login </button>
@@ -42,25 +42,23 @@
 
   <!-- Seccion Acerca de -->
 
-  <div class="container-xl">
+  <div class="container-xl" id="Acerca-de">
 
     <ul class="Lista">
 
       <div class="accordion accordion-flush" id="accordionFlushExample">
         <div class="accordion-item">
           <h2 class="accordion-header" id="flush-headingOne"> </h2>
-""
+
       <li> <img class="Foto-Perfil" src="Foto de Perfil.jpeg" alt="Foto de Perfil" width="340" height="380">
       </li>
 
       <li class="Acerca"> 
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" id="Acordion">
           <h1 class="display-6"> Acerca de </h1> 
         </button>
       </li> 
 
-    </ul>
- 
       <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
 
         <div class="accordion-body" id="Cuerpo-Acordion">
@@ -72,76 +70,156 @@
 
       </div>
 
+    </ul>
+
   </div>
   
-    <hr>
+    
 
     <!-- Seccion Experiencia -->
 
-  <div class="container-xl">
+  <div class="container-xl" id="Experiencia">
 
     <p class="h3"> Experiencia </p>
+    <hr>
 
       <p> Aquí colocarás toda la información de los lugares donde has trabajado, incluyendo Titulo del puesto, periodo, logo de la empresa si lo encuentras, y descripción de las actividades realizadas en ese puesto.
      </p>
 
   </div>
 
-<hr>
+
 
 <!-- Seccion Educación -->
 
-  <div class="container-xl">
+  <div class="container-xl" id="Educacion">
 
     <p class="h3"> Educación </p>
+    <hr>
 
       <p>Escribir toda la información de tu formación académica, certificaciones, cursos, y todo lo relacionado al título que actualmente cuentas, es importante detallar la información del instituto, el logo de ser posible, nombre, carrera o título estudiado, y en qué periodo o año.
       </p>
 
   </div>
 
-<hr>
+
 
 <!-- Habildades Blandas y Duras -->
 
-  <div class="container-xl">
+  <div class="container-xl" id="Habilidades">
 
     <p class="h3"> Hard and Soft Skills  </p>
 
-      <p> Visualizado como porcentajes u otra forma de visualización atractiva colocarás tus habilidades duras y blandas relacionadas contigo y qué grado de dominio tienes, puedes también generar una sección adicional con los idiomas.
+      <p class="Parrafo-Habilidades"> Visualizado como porcentajes u otra forma de visualización atractiva colocarás tus habilidades duras y blandas relacionadas contigo y qué grado de dominio tienes, puedes también generar una sección adicional con los idiomas.
       </p>
+
+      <!-- <div class="progress">
+        <div class="progress-bar" style="width:75%;">
+          <span class="progress-bar-text"> 75% </span>
+        </div>
+      </div>
+
+      <div class="progress">
+        <div class="progress-bar" style="width:50%;">
+          <span class="progress-bar-text"> 50% </span>
+        </div>
+      </div>
+
+      <div class="progress">
+        <div class="progress-bar" style="width:25%;">
+          <span class="progress-bar-text"> 25% </span>
+        </div>
+      </div> -->
+
+
+      <ul class="Lista-Habilidades">
+        <li class="Habilidad-1">
+      <div class="container">
+        <div class="card">
+          <div class="box">
+            <div class="percent">
+              <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70"></circle>
+              </svg>
+              <div class="num">
+                <h2> 90 <span> % </span></h2>
+              </div>
+              <h2 class="text"> Html </h2>
+           </div>
+          </div>
+        </div>
+      </div>
+    </li>
+
+
+      <li class="Habilidad-2">
+        <div class="container">
+        <div class="card">
+          <div class="box">
+            <div class="percent">
+              <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70"></circle>
+              </svg>
+              <div class="num">
+                <h2> 90 <span> % </span></h2>
+              </div>
+              <h2 class="text"> Css </h2>
+          </div>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    </ul>
+
+
+
+
+
+
+
+      <!-- <div class="box-skills">
+        <div class="skill1 skills">
+            <span class="skill-name">JavaScript</span>
+            <div role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="--value:65">
+          </div>
+        </div>
+      </div> -->
 
   </div>
 
-<hr>
 
 <!-- Proyectos -->
 
-  <div class="container-xl">
+  <div class="container-xl" id="Proyectos">
 
     <p class="h3"> Proyectos </p>
 
       <p> En esta sección deberá encontrarse la información sobre los proyectos que estuviste involucrado o que desarrollaste, incluyendo este portfolio web. Cada proyecto deberá contener el nombre, fecha de realización, descripción del proyecto y el link a su evidencia, en este caso podrías adjuntar imágenes de ellos.
       </p>
-
+        
   </div>
 
-<hr> 
+<br>
+<br>
+
 
 <!-- Pie de pagina -->
 
-<footer>
+  <footer id="Pie">
 
-   <div class="container-xl" id="Pie">
-    2023
-   </div>
+    <div class="container-xl" >
+      <p> 2023 </p> 
+    </div>
 
-</footer>
+  </footer>
 
 
 
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-  </body>
+</body>
 </html>
